@@ -3,7 +3,7 @@
 		"generator": "VISUALIZEGLTF",
 		"version" : "2.0"
 	},
-	"extensionsUsed": [ "KHR_lights_punctual" ],
+	"extensionsUsed": [ "KHR_lights_punctual","KHR_texture_transform" ],
 	"scenes": [
 		{
 			"name": "Default",
@@ -14,7 +14,7 @@
 	"nodes": [
 		{
 			"children": [
-				1, 5, 6, 7, 8, 9
+				1, 6, 7, 8, 9, 10
 			]
 			,"name": ""		}
 ,
@@ -32,24 +32,28 @@
 ,
 		{
 			"children": [
-				3, 4
+				3, 4, 5
 			]
 			,"name": "Root"		}
 ,
 		{
 			"mesh": 0
-			,"name": "color"		}
+			,"name": "polished pine 2d"		}
 ,
 		{
 			"mesh": 1
-			,"name": "carbon steel"		}
+			,"name": "polished steel"		}
+,
+		{
+			"mesh": 2
+			,"name": "black low gloss plastic"		}
 ,
 		{
 			"matrix": [
-				-0.4818522,					1.510134E-07,					-0.8762525,					0,
-				-0.02647785,					0.9995434,					0.01456037,					0,
-				0.8758524,					0.03021723,					-0.4816322,					0,
-				19.13708,					1.829822,					-1.970719,					1
+				0.7977023,					0.02814773,					0.6023941,					0,
+				0.05902604,					0.9904693,					-0.1244446,					0,
+				-0.6001558,					0.1348267,					0.7884383,					0,
+				-9.800501,					4.097337,					22.19905,					1
 			]
 			,"camera": 0
 			,"name": "SOLIDWORKS Viewport"		}
@@ -148,6 +152,20 @@
 					"material" : 1
 				}
 			]
+		},
+		{
+			"primitives" : [
+				{
+					"attributes" : {
+					"POSITION" : 9
+					,"NORMAL" : 10
+					,"TEXCOORD_0" : 11
+					},
+					"indices" : 8,
+					"mode": 4,
+					"material" : 2
+				}
+			]
 		}
 	],
 	"accessors" : [
@@ -155,30 +173,30 @@
 				"bufferView": 3
 				,"byteOffset" : 0
 				,"componentType" : 5125
-				,"count" : 49332
+				,"count" : 14640
 				,"type" : "SCALAR"
 			},
 			{
 				"bufferView": 0
 				,"byteOffset" : 0
 				,"componentType" : 5126
-				,"count" : 25918
+				,"count" : 8670
 				,"type" : "VEC3"
-								,"min": [-0.91752243,3.29112744,3.4960084]
+								,"min": [-0.886996269,3.29112744,3.4960084]
 								,"max": [8.46847534,7.24768829,9.6204071]
 			},
 			{
 				"bufferView": 1
 				,"byteOffset" : 0
 				,"componentType" : 5126
-				,"count" : 25918
+				,"count" : 8670
 				,"type" : "VEC3"
 			},
 			{
 				"bufferView": 2
 				,"byteOffset" : 0
 				,"componentType" : 5126
-				,"count" : 25918
+				,"count" : 8670
 				,"type" : "VEC2"
 			},
 			{
@@ -210,26 +228,66 @@
 				,"componentType" : 5126
 				,"count" : 490
 				,"type" : "VEC2"
+			},
+			{
+				"bufferView": 11
+				,"byteOffset" : 0
+				,"componentType" : 5125
+				,"count" : 34224
+				,"type" : "SCALAR"
+			},
+			{
+				"bufferView": 8
+				,"byteOffset" : 0
+				,"componentType" : 5126
+				,"count" : 16926
+				,"type" : "VEC3"
+								,"min": [-0.676613808,3.63580799,5.01636839]
+								,"max": [0.859526634,5.41499233,8.10004807]
+			},
+			{
+				"bufferView": 9
+				,"byteOffset" : 0
+				,"componentType" : 5126
+				,"count" : 16926
+				,"type" : "VEC3"
+			},
+			{
+				"bufferView": 10
+				,"byteOffset" : 0
+				,"componentType" : 5126
+				,"count" : 16926
+				,"type" : "VEC2"
 			}
 	],
 	"materials": [
 			{
-				"name": "color",
+				"name": "polished pine 2d",
 				"emissiveFactor": [
 					0, 0, 0
 				]
 				,"pbrMetallicRoughness": {
-					"baseColorFactor": [
-						0.2468004, 0.08241421, 0.0002615437, 1
+					"baseColorTexture": {
+						"index": 0
+						,"extensions": {
+							"KHR_texture_transform": {
+								"offset": [0.4992127,-0.5007873],
+								"rotation": 0,
+								"scale": [0.001574643, 0.001574643]
+							}
+						}
+					}
+					,"baseColorFactor": [
+						1, 1, 1, 1
 					]
 					,"metallicFactor": 0
-					,"roughnessFactor": 1
+					,"roughnessFactor": 0.01336535
 				}
 				,"alphaMode": "OPAQUE"
 				,"doubleSided": true
 			},
 			{
-				"name": "carbon steel",
+				"name": "polished steel",
 				"emissiveFactor": [
 					0, 0, 0
 				]
@@ -242,34 +300,70 @@
 				}
 				,"alphaMode": "OPAQUE"
 				,"doubleSided": true
+			},
+			{
+				"name": "black low gloss plastic",
+				"emissiveFactor": [
+					0, 0, 0
+				]
+				,"pbrMetallicRoughness": {
+					"baseColorFactor": [
+						0.006884233, 0.006884233, 0.006884233, 1
+					]
+					,"metallicFactor": 0
+					,"roughnessFactor": 0.6440087
+				}
+				,"alphaMode": "OPAQUE"
+				,"doubleSided": true
+			}
+	],
+	"textures": [
+			{
+				"sampler": 0,
+				"source": 0,
+				"name": "About_Time_Texture_0002.png"
+			}
+	],
+	"images": [
+			{
+				"uri": "About_Time_Texture_0002.png"
+			}
+	],
+	"samplers": [
+			{
+				"magFilter": 9729,
+				"minFilter" : 9729,
+				"wrapS" : 10497,
+				"wrapT" : 10497,
+				"name": "DefaultSampler"
 			}
 	],
 	"bufferViews" : [
 			{
 				"buffer": 0
 				,"byteOffset" : 0
-				,"byteLength" : 311016
+				,"byteLength" : 104040
 				,"byteStride" : 12
 				,"target" : 34962
 			},
 			{
 				"buffer": 0
-				,"byteOffset" : 311016
-				,"byteLength" : 311016
+				,"byteOffset" : 104040
+				,"byteLength" : 104040
 				,"byteStride" : 12
 				,"target" : 34962
 			},
 			{
 				"buffer": 0
-				,"byteOffset" : 622032
-				,"byteLength" : 207344
+				,"byteOffset" : 208080
+				,"byteLength" : 69360
 				,"byteStride" : 8
 				,"target" : 34962
 			},
 			{
 				"buffer": 0
-				,"byteOffset" : 829376
-				,"byteLength" : 197328
+				,"byteOffset" : 277440
+				,"byteLength" : 58560
 				,"target" : 34963
 			},
 			{
@@ -298,16 +392,47 @@
 				,"byteOffset" : 15680
 				,"byteLength" : 4368
 				,"target" : 34963
+			},
+			{
+				"buffer": 2
+				,"byteOffset" : 0
+				,"byteLength" : 203112
+				,"byteStride" : 12
+				,"target" : 34962
+			},
+			{
+				"buffer": 2
+				,"byteOffset" : 203112
+				,"byteLength" : 203112
+				,"byteStride" : 12
+				,"target" : 34962
+			},
+			{
+				"buffer": 2
+				,"byteOffset" : 406224
+				,"byteLength" : 135408
+				,"byteStride" : 8
+				,"target" : 34962
+			},
+			{
+				"buffer": 2
+				,"byteOffset" : 541632
+				,"byteLength" : 136896
+				,"target" : 34963
 			}
 	],
 	"buffers" : [
 			{
-				"byteLength": 1026704
-				,"uri" : "About Time_0001.bin"
+				"byteLength": 336000
+				,"uri" : "About_Time_0001.bin"
 			},
 			{
 				"byteLength": 20048
-				,"uri" : "About Time_0002.bin"
+				,"uri" : "About_Time_0002.bin"
+			},
+			{
+				"byteLength": 678528
+				,"uri" : "About_Time_0003.bin"
 			}
 	]
 }
