@@ -50,10 +50,10 @@
 ,
 		{
 			"matrix": [
-				-0.7071068,					3.023587E-08,					0.7071068,					0,
-				0.4082485,					0.8164964,					0.4082485,					0,
-				-0.5773501,					0.5773506,					-0.5773501,					0,
-				-5.712479,					8.895484,					-0.9163628,					1
+				-0.8146656,					0.007547496,					0.5798819,					0,
+				0.09206295,					0.9889187,					0.1164662,					0,
+				-0.5725769,					0.1482667,					-0.8063328,					0,
+				-7.579933,					4.049104,					-7.700206,					1
 			]
 			,"camera": 0
 			,"name": "SOLIDWORKS Viewport"		}
@@ -265,7 +265,7 @@
 				"name": "unfinished pine 2d",
 					"normalTexture": {
 						"index": 1,
-						"scale": 0.6
+						"scale": 0.3
 						,"extensions": {
 							"KHR_texture_transform": {
 								"offset": [0.4992127,-0.5007873],
@@ -289,10 +289,10 @@
 						}
 					}
 					,"baseColorFactor": [
-						1, 1, 1, 1
+						0.6, 0.6, 0.6, 1
 					]
 					,"metallicFactor": 0
-					,"roughnessFactor": 0.01336535
+					,"roughnessFactor": 1
 				}
 				,"alphaMode": "OPAQUE"
 				,"doubleSided": true
