@@ -1,0 +1,193 @@
+{
+	"asset": {
+		"generator": "VISUALIZEGLTF",
+		"version" : "2.0"
+	},
+	"scenes": [
+		{
+			"name": "Default",
+			"nodes": [
+				0]
+		}
+	],
+	"nodes": [
+		{
+			"children": [
+				1, 4, 5, 6
+			]
+			,"name": ""		}
+,
+		{
+			"children": [
+				2
+			]
+			,"matrix": [
+				0.001,					0,					0,					0,
+				0,					0.001,					0,					0,
+				0,					0,					0.001,					0,
+				0,					-3.290828,					0,					1
+			]
+			,"name": "Assembly with Gnomon - Sundial-1"		}
+,
+		{
+			"children": [
+				3
+			]
+			,"name": "Root"		}
+,
+		{
+			"mesh": 0
+			,"name": "Assembly with Gnomon - Sundial-1[1]"		}
+,
+		{
+			"matrix": [
+				0.09605227,					-0.123569,					0.9876764,					0,
+				0.09428915,					0.988932,					0.1145564,					0,
+				-0.9909004,					0.08212376,					0.1066404,					0,
+				-15.39264,					3.251907,					9.032703,					1
+			]
+			,"camera": 0
+			,"name": "Default Camera"		}
+,
+		{
+			"name": "High Contrast Ramp"		}
+,
+		{
+			"name": "Studio Soft Grey 12"		}
+	],
+	"cameras": [
+		{
+			"type": "perspective",
+			"perspective" : {
+				"aspectRatio": 1.777778,
+				"yfov" : 0.2617994,
+				"zfar" : 100,
+				"znear" : 0.01
+			}
+		}
+	],
+	"meshes" : [
+		{
+			"primitives" : [
+				{
+					"attributes" : {
+					"POSITION" : 1
+					,"NORMAL" : 2
+					,"TEXCOORD_0" : 3
+					},
+					"indices" : 0,
+					"mode": 4,
+					"material" : 0
+				}
+			]
+		}
+	],
+	"accessors" : [
+			{
+				"bufferView": 3
+				,"byteOffset" : 0
+				,"componentType" : 5125
+				,"count" : 20148
+				,"type" : "SCALAR"
+			},
+			{
+				"bufferView": 0
+				,"byteOffset" : 0
+				,"componentType" : 5126
+				,"count" : 20148
+				,"type" : "VEC3"
+								,"min": [3186.06519,3291.12744,6853.42383]
+								,"max": [12541.5371,7247.68848,12977.8223]
+			},
+			{
+				"bufferView": 1
+				,"byteOffset" : 0
+				,"componentType" : 5126
+				,"count" : 20148
+				,"type" : "VEC3"
+			},
+			{
+				"bufferView": 2
+				,"byteOffset" : 0
+				,"componentType" : 5126
+				,"count" : 20148
+				,"type" : "VEC2"
+			}
+	],
+	"materials": [
+			{
+				"name": "Basic Wood",
+				"emissiveFactor": [
+					0, 0, 0
+				]
+				,"pbrMetallicRoughness": {
+					"baseColorTexture": {
+						"index": 0
+					}
+					,"baseColorFactor": [
+						1, 1, 1, 1
+					]
+					,"metallicFactor": 0
+					,"roughnessFactor": 0.5536692
+				}
+				,"alphaMode": "OPAQUE"
+				,"doubleSided": true
+			}
+	],
+	"textures": [
+			{
+				"sampler": 0,
+				"source": 0,
+				"name": "About_Time_Texture_0002.png"
+			}
+	],
+	"images": [
+			{
+				"uri": "About_Time_Texture_0002.png"
+			}
+	],
+	"samplers": [
+			{
+				"magFilter": 9729,
+				"minFilter" : 9729,
+				"wrapS" : 10497,
+				"wrapT" : 10497,
+				"name": "DefaultSampler"
+			}
+	],
+	"bufferViews" : [
+			{
+				"buffer": 0
+				,"byteOffset" : 0
+				,"byteLength" : 241776
+				,"byteStride" : 12
+				,"target" : 34962
+			},
+			{
+				"buffer": 0
+				,"byteOffset" : 241776
+				,"byteLength" : 241776
+				,"byteStride" : 12
+				,"target" : 34962
+			},
+			{
+				"buffer": 0
+				,"byteOffset" : 483552
+				,"byteLength" : 161184
+				,"byteStride" : 8
+				,"target" : 34962
+			},
+			{
+				"buffer": 0
+				,"byteOffset" : 644736
+				,"byteLength" : 80592
+				,"target" : 34963
+			}
+	],
+	"buffers" : [
+			{
+				"byteLength": 725328
+				,"uri" : "About_Time_0001.bin"
+			}
+	]
+}
