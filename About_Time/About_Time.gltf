@@ -3,7 +3,7 @@
 		"generator": "VISUALIZEGLTF",
 		"version" : "2.0"
 	},
-	"extensionsUsed": [ "KHR_lights_punctual","KHR_texture_transform" ],
+	"extensionsUsed": [ "KHR_lights_punctual" ],
 	"scenes": [
 		{
 			"name": "Default",
@@ -50,10 +50,10 @@
 ,
 		{
 			"matrix": [
-				0.7977023,					0.02814773,					0.6023941,					0,
-				0.05902604,					0.9904693,					-0.1244446,					0,
-				-0.6001558,					0.1348267,					0.7884383,					0,
-				-9.800501,					4.097337,					22.19905,					1
+				0.8320532,					-0.005323782,					0.5546703,					0,
+				0.08373982,					0.989699,					-0.1161177,					0,
+				-0.5483385,					0.1430641,					0.8239281,					0,
+				-7.594572,					3.761367,					20.48113,					1
 			]
 			,"camera": 0
 			,"name": "SOLIDWORKS Viewport"		}
@@ -262,26 +262,19 @@
 	],
 	"materials": [
 			{
-				"name": "polished pine 2d",
+				"name": "Basic Wood",
 				"emissiveFactor": [
 					0, 0, 0
 				]
 				,"pbrMetallicRoughness": {
 					"baseColorTexture": {
 						"index": 0
-						,"extensions": {
-							"KHR_texture_transform": {
-								"offset": [0.4992127,-0.5007873],
-								"rotation": 0,
-								"scale": [0.001574643, 0.001574643]
-							}
-						}
 					}
 					,"baseColorFactor": [
 						1, 1, 1, 1
 					]
 					,"metallicFactor": 0
-					,"roughnessFactor": 0.01336535
+					,"roughnessFactor": 0.5536692
 				}
 				,"alphaMode": "OPAQUE"
 				,"doubleSided": true
